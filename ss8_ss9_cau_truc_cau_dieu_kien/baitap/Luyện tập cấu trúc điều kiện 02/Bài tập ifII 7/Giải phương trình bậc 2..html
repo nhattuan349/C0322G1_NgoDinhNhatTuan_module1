@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2.</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập tham số a (m)'))
+    let b = parseInt(prompt('Nhập tham số b (m)'))
+    let c = parseInt(prompt('Nhập tham số c (m)'))
+    let denta = (b*b)-4*a*c
+    let ngKep = -b/(2*a)
+    let haingxI =((-b)+Math.sqrt(denta))/(2*a)
+    let haingxII =((-b)-Math.sqrt(denta))/(2*a)
+    // alert(denta)
+    if (a==0) {
+        alert('phương trình ax2+bx+c=0 (a≠0) vô nghiệm')
+    }
+    else if (denta<0) {
+        alert('phương trình ax2+bx+c=0 (a≠0) vô nghiệm')
+    }
+    else if (denta == 0) {
+        alert('phương trình ax2+bx+c=0 (a≠0) có ngiệm kép x1=x2=' + ngKep)
+            }
+    else if (denta>0) {
+        alert('phương trình ax2+bx+c=0 (a≠0) có hai nghiệm x1=' + haingxI + " và x2 =" + haingxII)
+    }
+</script>
+</body>
+</html>

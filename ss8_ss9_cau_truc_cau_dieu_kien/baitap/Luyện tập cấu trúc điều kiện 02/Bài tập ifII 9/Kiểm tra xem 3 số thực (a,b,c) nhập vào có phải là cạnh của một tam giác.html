@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác</title>
+</head>
+<body>
+<script>
+    let a =Number(prompt('nhập số'))
+    let b =Number(prompt('nhập số'))
+    let c =Number(prompt('nhập số'))
+    let dkI = a+b+c
+    let dkII= a+b
+    let dkIII= b+c
+    let dkIV = a+c
+        if (dkI>0 && dkII>c && dkIII>a && dkIV>b ) {
+            alert(a+','+b+','+c+' là cạnh của một tam giác')
+    }else {
+            alert(a+','+b+','+c+' không là cạnh của một tam giác')
+        }
+</script>
+</body>
+</html>

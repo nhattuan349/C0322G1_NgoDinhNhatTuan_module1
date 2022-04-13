@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        td {
+            border-collapse: collapse;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            color: blue
+        }
+    </style>
+</head>
+<body>
+<table style="border:8px solid black; width: 390px; height: 390px;border-spacing: 16px 16px ;boder-coolaspe:collaspe">
+    <tr align="center">
+        <th colspan="4">
+            <input style="width: 95%;height: 50px" type="text" name="nhập phép tính" id="nhapptinh"/>
+        </th>
+    </tr>
+    <tr align="center">
+        <td>
+            <input type="button" name="số 1" value="1" id="phim1" onclick="nhapdata('1')"/>
+        </td>
+        <td>
+            <input type="button" name="số 2" value="2" id="phim2" onclick="nhapdata(2)"/>
+        </td>
+        <td>
+            <input type="button" name="số 3" value="3" id="phim3" onclick="nhapdata(3)"/>
+        </td>
+        <td>
+            <input type="button" name="dấu cộng" value="+" id="daucong" onclick="nhapdata('+')"/>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <input type="button" name="số 4" value="4" id="phim4" onclick="nhapdata(4)"/>
+        </td>
+        <td>
+            <input type="button" name="số 5" value="5" id="phim5" onclick="nhapdata(5)"/>
+        </td>
+        <td>
+            <input type="button" name="số 6" value="6" id="phim6" onclick="nhapdata(6)"/>
+        </td>
+        <td>
+            <input type="button" name="dấu trừ" value="-" id="dautru" onclick="nhapdata('-')"/>
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td>
+            <input type="button" name="số 7" value="7" id="phim7" onclick="nhapdata(7)"/>
+        </td>
+        <td>
+            <input type="button" name="số 8" value="8" id="phim8" onclick="nhapdata(8)"/>
+        </td>
+        <td>
+            <input type="button" name="số 9" value="9" id="phim9" onclick="nhapdata(9)"/>
+        </td>
+        <td>
+            <input type="button" name="dấu *" value="*" id="daunhan" onclick="nhapdata('*')"/>
+        </td>
+    </tr>
+
+    <tr align="center">
+        <td>
+            <input type="button" name="làm mới" value="C" id="C" onclick="dete()"/>
+        </td>
+        <td>
+            <input type="button" name="số 0" value="0" id="phim0" onclick="nhapdata(0)"/>
+        </td>
+        <td>
+            <input type="button" name="dấu =" value="=" id=daubang" onclick="result()"/>
+        </td>
+        <td>
+            <input type="button" name="dấu /" value="/" id="dauchia" onclick="nhapdata('/')"/>
+        </td>
+    </tr>
+</table>
+<script>
+    
+    function nhapdata(num) {
+        document.getElementById("nhapptinh").value=document.getElementById("nhapptinh").value+num;
+
+    }
+    function result() {
+        let kQua = document.getElementById("nhapptinh").value;
+        document.getElementById("nhapptinh").value=eval(kQua);
+
+    }
+    function dete() {
+        document.getElementById("nhapptinh").value='';
+
+    }
+</script>
+</body>
+</html>

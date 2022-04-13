@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+<body>
+<table align="center" border='1'>
+    <tr>
+
+    </tr>
+    <tr>
+        <td>Điểm kiểm tra</td>
+        <td>
+            <input type="text" value="" name="diemkiemtra" id="diemkiemtra"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Điểm giữa kỳ</td>
+        <td>
+            <input type='text' value="" name='diemgiuaky' id='diemgiuaky'/>
+        </td>
+    </tr>
+    <tr>
+        <td>Điểm cuối kỳ</td>
+        <td>
+            <input type='text' value="" name='diemgiuaky' id='diemcuoiky'/>
+        </td>
+    </tr>
+    <tr>
+        <td>Điểm trung bình</td>
+        <td>
+            <input type='text' value="" name='Điểm trung bình' id='diemtb'  />
+        </td>
+    </tr>
+    <tr>
+        <td>Xếp loại</td>
+        <td>
+            <input type='text' value="" name='Xếp loại' id='Xếp loại' />
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="2" >
+            <input type='button' value='Kết quả điểm trung bình' name="Kết quảdtb" onclick="diemtbb()"/>
+            <input type='button' value='Xếp loại' name="Xếp loại" onclick="xeploai()" />
+        </td>
+    </tr>
+</table>
+<script>
+    function diemtbb() {
+    let dkiemtra = parseInt(document.getElementById('diemkiemtra').value);
+    let dgiuaky = parseInt(document.getElementById('diemgiuaky').value);
+    let dcuoiky = parseInt(document.getElementById('diemgiuaky').value);
+    document.getElementById('diemtb').value= (dkiemtra+dgiuaky+dcuoiky)/3;
+    }
+    function xeploai() {
+    let diemtbcn = document.getElementById('diemtb').value
+        if (diemtbcn>=8) {
+            document.getElementById('Xếp loại').value='Giỏi'
+    }
+        else if (diemtbcn>=6.5){
+            document.getElementById('Xếp loại').value='Khá'
+        }
+        else if (diemtbcn>=5){
+            document.getElementById('Xếp loại').value='Trung bình'
+        }
+        else if (diemtbcn>=2){
+            document.getElementById('Xếp loại').value='Yếu'
+        }
+
+
+}
+</script>
+</body>
+</html>

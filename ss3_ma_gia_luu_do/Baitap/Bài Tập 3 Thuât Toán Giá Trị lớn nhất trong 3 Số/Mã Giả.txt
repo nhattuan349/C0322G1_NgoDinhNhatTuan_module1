@@ -1,0 +1,9 @@
+BEGIN
+	INPUT A,B,C
+	IF A>B AND A>C
+		DISPLAY " A Là phần tử lớn nhất"
+	ELSE IF B>C
+		DISPLAY " B Là phần từ lớn nhất"
+	ELSE IF B<C
+		DISPLAY " C Là phần tử lớn nhất"
+END

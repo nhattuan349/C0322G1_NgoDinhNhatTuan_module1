@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+        Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.</title>
+</head>
+<body>
+<script>
+    let giatrivao =Number(prompt('nhập số'))
+
+    if (Number.isInteger(giatrivao)==true && giatrivao>0 && giatrivao<120) {
+        alert(giatrivao + ' là tuổi của một người không')
+    }
+    else {
+        alert(giatrivao + ' không phải tuổi của một người không')
+    }
+</script>
+</body>
+</html>

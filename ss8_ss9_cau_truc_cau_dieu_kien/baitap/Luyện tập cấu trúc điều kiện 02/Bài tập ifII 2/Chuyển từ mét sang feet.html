@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ mét sang feet</title>
+</head>
+<body>
+<table align="center">
+    <tr>
+        <td>Nhập độ vào đây</td>
+        <td style="width: 100px"></td>
+        <td>Từ Độ</td>
+        <td style="width: 100px"></td>
+        <td>Đến Độ</td>
+        <td style="width: 100px"></td>
+        <td style="width: 100px"></td>
+    </tr>
+    <tr>
+        <td><input type="number" id="dauvao" /></td>
+        <td style="width: 100px"></td>
+        <td>
+            <select name="" id="select1">
+                <option value="m" style="width: 300px">m</option>
+                <option value="fit" style="width: 300px">fit</option>
+            </select></td>
+        <td style="width: 100px">
+            <p align="center" style="color: blue">=<span id="result"></span></p>
+        </td>
+        <td>
+            <select id="select2">
+                <option value="m" style="width: 300px">m</option>
+                <option value="fit" style="width: 300px">fit (Fahrenheit)</option>
+            </select>
+        </td>
+        <td style="width: 100px"></td>
+        <td>
+            <button onclick="getvalue()" style="background: mediumpurple">Đổi</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function getvalue() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let seclect1 = document.getElementById('select1').value;
+        let seclect2 = document.getElementById('select2').value;
+        if (seclect1==seclect2){
+            document.getElementById('result').innerHTML = giatrivao;
+        }
+        if (seclect1=="m" && seclect2=="fit"){
+            document.getElementById('result').innerHTML = giatrivao/3.2808;
+        }
+        if (seclect1=="fit" && seclect2=="m"){
+            document.getElementById('result').innerHTML = giatrivao*3.2808;
+        }
+
+    }
+</script>
+</body>
+</html>

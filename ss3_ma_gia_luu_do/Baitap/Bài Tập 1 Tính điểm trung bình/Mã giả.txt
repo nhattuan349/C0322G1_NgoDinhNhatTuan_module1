@@ -1,0 +1,14 @@
+Bài Tập 1: Mô tả Thuật Toán  tính điểm trung bình
+ 
+ Bài giải 
+ 
+ * Mã giả
+ 
+BEGIN
+	INPUT M,P,C
+	INPUT A 
+	A = (M + P + C)/3
+	Average A
+		DISPLAY "Điểm trung bình 3 môn"
+END
+

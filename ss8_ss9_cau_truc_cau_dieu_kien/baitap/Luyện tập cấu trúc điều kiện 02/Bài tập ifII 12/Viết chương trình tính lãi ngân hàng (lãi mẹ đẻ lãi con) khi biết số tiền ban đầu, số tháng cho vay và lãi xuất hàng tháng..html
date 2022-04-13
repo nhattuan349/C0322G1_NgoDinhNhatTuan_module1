@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu,
+        số tháng cho vay và lãi xuất hàng tháng.</title>
+</head>
+<body>
+<script>
+    let tienvaybank      = 50000000
+    let tienlaiThangI    = tienvaybank * 0.006
+    let tienlaiThangII   = (50000000 + tienlaiThangI) * 0.06
+    let tienlaiThangIII  = (50000000 + tienlaiThangII) * 0.06
+    let tienlaiThangIV   = (50000000 + tienlaiThangIII) * 0.06
+    let tienlaiThangV    = (50000000 + tienlaiThangIV) * 0.06
+    let tienlaiThangVI   = (50000000 + tienlaiThangV) * 0.06
+    let tienlaiThangVII  = (50000000 + tienlaiThangVI) * 0.06
+    let tienlaiThangVIII = (50000000 + tienlaiThangVII) * 0.06
+    let tienlaiThangIX   = (50000000 + tienlaiThangVIII) * 0.06
+    let tienlaiThangX    = (50000000 + tienlaiThangIX) * 0.06
+    let tienlaiThangXI   = (50000000 + tienlaiThangX) * 0.06
+    let tienlaiThangXII  = (50000000 + tienlaiThangXI) * 0.06
+    let sothangchovay    = 12
+    let sumlaiXIIthang   = tienlaiThangI+tienlaiThangII+tienlaiThangIII+tienlaiThangIV+tienlaiThangV+tienlaiThangVI+tienlaiThangVII+tienlaiThangVIII+tienlaiThangIX+tienlaiThangX+tienlaiThangXI+tienlaiThangXII
+    alert('lãi ngân hàng sau 12 tháng là'+ sumlaiXIIthang)
+
+</script>
+</body>
+</html>
