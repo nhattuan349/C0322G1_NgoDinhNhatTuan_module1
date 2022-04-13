@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In_hinh_chu_nhat</title>
+</head>
+<body>
+<script>
+    // de bai a = 7 , b = 21
+    let a = parseInt(prompt("nhập chieu rong hcn"))
+    let b = parseInt(prompt("nhập chieu dai hcn"))
+
+    for (let i= 1; i<=a ; i++){
+        for (let j= 1; j<=b; j++){
+            if (i===1||j===1||i===a||j===b){
+                document.write("*")
+            }else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+
+
+</script>
+</body>
+</html>

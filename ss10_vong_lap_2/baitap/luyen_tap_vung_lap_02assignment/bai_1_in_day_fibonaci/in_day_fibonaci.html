@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt('Nhập số lượng  số trong dãy fibonacci đầu tiên sẽ hiển thị: '));
+    let a=0;
+    let b=1;
+    let sum;
+    for (i = 1; i <= numbers; i++) {
+        document.write(a+"<br>");
+        sum=a+b;
+        a=b;
+        b=sum;
+    }
+</script>
+</body>
+</html>
