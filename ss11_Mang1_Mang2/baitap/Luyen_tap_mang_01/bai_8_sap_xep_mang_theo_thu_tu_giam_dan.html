@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+        Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+<script>
+    let numbers = [1,24,3,32,5,19,71,48,79,10];
+    for (let i=0;i<numbers.length;i++){
+        for (j=i+1;j<numbers.length;j++) {
+            if (numbers[i] < numbers[j]) {
+                let b = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = b
+            }
+        }
+    }
+    document.write(numbers)
+</script>
+</body>
+</html>
