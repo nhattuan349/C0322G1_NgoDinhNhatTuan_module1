@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<h1>Từ điển</h1>
+<input type="text" id="nhaptuvung"/>
+<input type="button" value="Dịch" onclick="Translate()"/>
+<p id="result"></p>
+<script>
+    let English = ["map","government","way","art","world","computer","people","two","family","health","system","information"]
+    let VietNam = ["Bản đồ","Chính phủ","Đường","Nghệ thuật","Thế giới","Máy tính","Người","Hai","Gia đình","Sức khỏe","Hệ thống","Thông tin"]
+    flag = false;
+    function Translate() {
+        let vocabulary = document.getElementById("nhaptuvung").value;
+        for (i = 0; i < English.length; i++) {
+            if (vocabulary === English[i]) {
+                flag = true;
+                document.getElementById("result").innerHTML = VietNam[i];
+                break;
+            } else if (vocabulary === VietNam[i]) {
+                flag = true;
+                document.getElementById("result").innerHTML = English[i];
+                break;
+            }
+        }
+        if(flag === false) {
+                    document.getElementById('result').innerHTML = 'Không tìm thấy';
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

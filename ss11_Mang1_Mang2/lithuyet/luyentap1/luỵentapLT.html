@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập ký thuyết</title>
+</head>
+<body>
+<script>
+    //Khai bao mang
+    // let arr = [ "Hà Nội", 45, true] //3
+    // let arr1 = new Array("Hà Nội", 45, true) //3
+    // let arr2 = Array (11) //11
+    // let arr2 = Array (abc) //1
+    //     // let arr3 = [11] //1
+    // console.log(arr2.length)
+
+    //Cách duyệt mảng 1 chiều
+    // let arr = ["a","b","c","d"];
+    // // for (let i=0; i<arr.length; i++){
+    // //     document.write(arr[i])
+    // // }
+    //
+    // // for -in
+    // for (let index in arr) {
+    //     document.write(index +"<br>"); // đưa ra kết quả số
+    // //     // document.write(arr[index]+"<br>") // đưa ra kết quả là giá trị mạng ( ở đây dạng chữ a,b,c,d)
+    // }
+
+    // for of
+    // for  (let element of arr){
+    //     document.write(element +"<br>") // đưa ra kết quả là giá trị mạng ( ở đây dạng chữ a,b,c,d)
+    // }
+
+    //Cách duyệt mảng 1 chiều
+
+
+    let arr = ["a", "b", "c", "d"]
+    arr.splice(2,0,"e");
+    for (let index of arr) {
+        document.write(index + "<br>")
+    }
+
+
+</script>
+</body>
+</html>

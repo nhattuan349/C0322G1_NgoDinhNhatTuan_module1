@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viet_chuong_trinh_khoi_tao/
+        nhap_vao_mot_mang_so_nguyen_va_dao_nguoc_cac_phan_tu</title>
+</head>
+<body>
+<script>
+    document.write("Mảng: ")
+    let numbers = []
+    let optionss = parseFloat(prompt("nhập số phần tử muốn nhập"));
+    for (let j = 0; j < optionss; j++) {
+        numbers[j] = parseFloat(prompt("nhập phần tử thứ " + (j + 1)));
+        document.write(numbers[j] + ",")
+    }
+
+    document.write("<br>" + "mảng đảo: ")
+    let first = 0
+    let last = numbers.length-1
+    while (first<last){
+        let b = numbers[first]
+        numbers[first]=numbers[last]
+        numbers[last]=b;
+        first++;
+        last--;
+    }
+    document.write(numbers)
+
+
+</script>
+</body>
+</html>

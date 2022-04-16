@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viet_mot_chuong_trinh_nhan_mot_
+        so_nhap_vao_va_chen_dau_(-)_giua_2__so_chan</title>
+</head>
+<body>
+<script>
+    const num=window.prompt();
+    const str = num.toString();
+    const result = [str[0]];
+
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

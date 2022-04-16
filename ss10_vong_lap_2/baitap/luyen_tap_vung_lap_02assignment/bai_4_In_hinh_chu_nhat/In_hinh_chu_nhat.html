@@ -7,19 +7,32 @@
 <body>
 <script>
     // de bai a = 7 , b = 21
-    let a = parseInt(prompt("nhập chieu rong hcn"))
-    let b = parseInt(prompt("nhập chieu dai hcn"))
-
-    for (let i= 1; i<=a ; i++){
-        for (let j= 1; j<=b; j++){
-            if (i===1||j===1||i===a||j===b){
+    let a = parseInt(prompt("nhập chiều rộng của hcn"))
+    let b = parseInt(prompt("nhập chiều dài của hcn"))
+    for (let i = 1; i <= a; i++) {
+        for (let j = 1; j <= b; j++) {
+            if (i === 1 || j === 1 || i === a || j === b) {
                 document.write("*")
-            }else {
-                document.write("&nbsp&nbsp")
+            } else {
+                document.write("&nbsp&nbsp");
             }
         }
         document.write("<br>")
     }
+
+    // let a = parseInt(prompt("nhập chieu rong hcn"))
+    // let b = parseInt(prompt("nhập chieu dai hcn"))
+    //
+    // for (let i= 1; i<=a ; i++){
+    //     for (let j= 1; j<=b; j++){
+    //         if (i===1||j===1||i===a||j===b){
+    //             document.write("*")
+    //         }else {
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
 
 
 </script>
