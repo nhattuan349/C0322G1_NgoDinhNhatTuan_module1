@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết một chương trình để đếm số từ trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let string = "Tháng giêng là tháng ăn chơi\n" +
+        "Tháng hai trồng đậu trồng khoai trồng cà\n" +
+        "Tháng ba thì đậu đã già\n" +
+        "Ta đi ta hái về nhà phơi khô\n" +
+        "Tháng tư đi tậu trâu bò\n" +
+        "Để ta sắm sửa làm mùa tháng năm.​"
+    let count = 0;
+    document.write("Chuỗi: ")
+    for(let i = 0; i < string.length; i++) {
+        document.write(string[i]);
+    }
+
+    for (i = 0; i < string.length; i++) {
+        if (string[i] !== " " && string[i + 1] !== " "){
+            count++
+        }
+            }
+    document.write("<br>"+"số từ trong chuỗi là: "+ count)
+</script>
+</body>
+</html>
