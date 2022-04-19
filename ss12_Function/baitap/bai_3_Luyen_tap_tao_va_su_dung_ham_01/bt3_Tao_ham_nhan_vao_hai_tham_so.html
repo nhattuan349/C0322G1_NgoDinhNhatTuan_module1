@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhận vào hai tham số.
+        Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+        hiển thị hộp thoại thông báo cho người dùng.
+        Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,
+        trả về tổng của hai tham số.</title>
+</head>
+<body>
+<script>
+    function dieukiensum(a1, a2) {
+        let sum = a1 + a2
+        if (a1 > a2) {
+            return "a1>a2"
+        } else {
+            return sum
+        }
+    }
+
+    let a1 = parseFloat(prompt("nhập sô thư nhất"))
+    let a2 = parseFloat(prompt("nhập số thứ hai"))
+    let sum = dieukiensum(a1, a2)
+    document.write(sum)
+
+</script>
+</body>
+</html>

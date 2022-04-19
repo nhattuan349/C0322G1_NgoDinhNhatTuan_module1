@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen_doi_giua_feet_va_meters</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Chuyển meter sang foot</label>
+        <input id="meterdata" type="number" placeholder="meterdata"
+               oninput="chuyenmeter(this.value)"
+               onchange="chuyenmeter(this.value)">
+
+    </p>
+    <p>Foot = <span id="resulta"></span>(meter)</p>
+    <p>
+        <label>Chuyển foot sang metter</label>
+        <input id="footdata" type="number" placeholder="footdata"
+               oninput="chuyenfoot(this.value)"
+               onchange="chuyenfoot(this.value)">
+    </p>
+    <p>Meter =<span id="resultb"></span>(foot)</p>
+</form>
+<script>
+    function chuyenmeter(meterrr) {
+        meterrr = parseFloat(meterrr);
+        document.getElementById("resulta").innerHTML=3.279 * meterrr
+
+    }
+    function chuyenfoot(foottt) {
+        foottt = parseFloat(foottt);
+        document.getElementById("resultb").innerHTML=0.305  * foottt
+
+    }
+
+
+</script>
+</body>
+</html>

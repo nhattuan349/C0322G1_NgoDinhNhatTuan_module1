@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim_gia_tri_nho_nhat_cua_mang</title>
+</head>
+<body>
+<script>
+    function minArray(arr) {
+        let min = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let arr1 = [1, 4, 6, 7, 3, 7, 3, 6, 8, 9, 2, 3, 5];
+    let min1 = minArray(arr1);
+    document.write("mang: " + arr1 + "co gia tri nho nhat" + min1 + "<br>")
+
+    let arr2 = [1, 3, 5, 7, 3, -3, -6, -7, 3, 8, 3, 2, -1]
+    let min2 = minArray(arr2)
+    document.write("mang: " + arr2 + "co gia tri nho nhat" + min2 + "<br>")
+
+    let arr3 = []
+    let min3 = minArray(arr3)
+    document.write("mang: " + arr3 + "co gia tri nho nhat " + min3 + "<br>")
+
+    let arr4 = [0, 0, 0, 0, 0, 0]
+    let min4 = minArray(arr4)
+    document.write("mang: " + arr4 + "co gia tri nho nhat la: " + min4 + "<br>")
+
+
+    // function minArray(arr) {
+    //     let min = arr[0];
+    //     for (var i = 0; i < arr.length; i++) {
+    //         if (arr[i] < min) {
+    //             min = arr[i];
+    //         }
+    //     }
+    //     return min;
+    // }
+    //
+    // let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    // let min1 = minArray(arr1);
+    // document.write("mang1: " + arr1 + "<br>" + "gia tri nho nhat la: " + min1 + "<br>")
+    //
+    // let arr2 = [7, 12, 6, 9, 20, 56, 89];
+    // let min2 = minArray(arr2);
+    // document.write("mang2: " + arr2 + "<br>" + "gia tri nho nhat la: " + min2 + "<br>")
+    //
+    //
+    // let arr3 = [];
+    // let min3 = minArray(arr3);
+    // document.write("mang3:" + arr3 + "<br>" + "gia tri nho nhat la " + min3 + "<br>")
+    //
+    // let arr4 = [0,0,0,0,0,0,0,0];
+    // let min4 = minArray(arr4);
+    // document.write("mang4:" + arr4 + "<br>" + "gia tri nho nhat la " + min4 + "<br>")
+
+
+    // function minArray(arr) {
+    //     let min = arr[0];
+    //     for (var i = 1; i < arr.length; i++) {
+    //         if (arr[i] < min) {
+    //             min = arr[i];
+    //         }
+    //     }
+    //     return min;
+    // }
+    //
+    // let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    // let min = minArray(arr1);
+    // document.write("Mang: "+arr1 +"gia tri nho nhat"+ min+"<br>" );
+    //
+    // let arr2 = [7, 12, 6, 9, 20, 56, 89]
+    // let min2 = minArray(arr2);
+    // document.write("Mang: "+arr2 +"gia tri nho nhat"+ min2+"<br>" );
+    // //
+    // let arr3 = []
+    // let min3 = minArray(arr3);
+    // document.write("Mang: "+arr3 +"gia tri nho nhat la "+ min3+"<br>");
+    //
+    // let arr4 = [0, 0, 0, 0, 0, 0]
+    // let min4 = minArray(arr4);
+    // document.write("Mang: "+arr4 +"gia tri nho nhat"+ min4 +"<br>");
+
+
+</script>
+</body>
+</html>

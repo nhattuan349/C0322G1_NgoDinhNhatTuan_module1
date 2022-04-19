@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+        Gọi hàm vừa xây dựng được.</title>
+</head>
+<body>
+<script>
+    function gThua(numbers) {
+        let sout = 1;
+        for (let i = 1; i <= numbers; i++) {
+            sout = sout * i
+        }
+       return sout
+    }
+    let numbers = parseFloat(prompt("nhập số nguyên bất kì"))
+    let result = gThua(numbers)
+    document.write(result)
+</script>
+</body>
+</html>
