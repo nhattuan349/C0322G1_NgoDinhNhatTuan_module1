@@ -8,8 +8,14 @@
 <body>
 <script>
     function checkNduong(a) {
-if(a)
+        if (a % 1 === 0) {
+            document.write("true");
+        }else {
+            document.write("false");
+        }
     }
+    let a = parseFloat(prompt("nhap so"));
+    checkNduong(a)
 </script>
 </body>
 </html>

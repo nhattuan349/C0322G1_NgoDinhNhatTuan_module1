@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào mảng số nguyên bất kỳ,
+        sau đó đảo ngược mảng số nguyên đó.</title>
+</head>
+<body>
+<script>
+    let numbers = []
+    let x = parseInt(prompt("so luong so nguyen muon nhap"));
+    for (j = 0; j < x; j++) {
+        numbers[j] = parseInt(prompt("nhap so nguyen thu " + (x + 1)));
+    }
+    numbers[numbers.length]=parseInt(prompt("them 1 so nguyen vao mang"))
+    document.write("Mảng: "+numbers + '<br>')
+    function swap() {
+        let first = 0;
+        let last = numbers.length - 1
+        while (first<last){
+            let b = numbers[first]
+            numbers[first] = numbers[last]
+            numbers[last] = b
+            first++;
+            last--;
+        }
+        return numbers
+    }
+
+    let y = swap(numbers);
+    document.write("Mảng đảo: "+y);
+
+</script>
+</body>
+</html>

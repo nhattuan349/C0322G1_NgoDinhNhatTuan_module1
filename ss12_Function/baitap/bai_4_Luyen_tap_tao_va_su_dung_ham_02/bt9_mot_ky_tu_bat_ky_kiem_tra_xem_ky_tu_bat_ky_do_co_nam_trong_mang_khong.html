@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+        kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+        Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </title>
+</head>
+<body>
+<script>
+    let string = ["m", "o", "k", "u", "o", "m", "g", "k", "m", 'h', "o", "g"]
+    document.write("Mảng: " + string + '<br>')
+    let testname = prompt("nhập ký tự cần kiểm tra")
+
+    function checkwordinarray() {
+        let count = 0
+        let flag = false;
+        for (i = 0; i < string.length; i++) {
+            if (string[i] === testname) {
+                flag = true;
+                count++
+            }
+        }
+        if(flag===false)  {
+            document.write("-1 <br>")
+    }
+
+    return count
+    }
+    let x = checkwordinarray(string)
+    document.write("ký tự "+testname+" xuất hiện "+x+" lần")
+</script>
+</body>
+</html>
