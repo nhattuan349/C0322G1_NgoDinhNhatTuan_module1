@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Viết một hàm chuẩn hóa xâu ký tự:
+        biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau
+        và bắt đầu mỗi từ phải in hoa.
+        Ví dụ tRuong    TaN   HAI => Truong Tan Hai.</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập xâu ký tự muốn chuẩn hoá");
+    let str = [];
+    let str1 = [];
+
+
+    str = a.toLowerCase().split(" ");
+    document.write(" " + str + "<br>")
+
+    function capital() {
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < str[i].length; j++) {
+                if (j === 0) {
+                    x = str[i][0].toUpperCase()
+                    str1.push(" ")
+                    str1.push(x)
+                    continue;
+                }
+                str1.push(str[i][j])
+            }
+        }
+    }
+
+    function longest() {
+        let max = str[0].length;
+        for (let i = 1; i < str.length; i++) {
+            if (str[i].length > max) {
+                max = str[i].length
+                index = i
+            }else {
+                index=i;
+            }
+        }
+        document.write("<br>"+ "Từ dài nhất trong xâu : " + str[index])
+
+    }
+
+    capital(str)
+    document.write(str1.join(""))
+    longest(str)
+
+
+</script>
+</body>
+</html>
+</body>
+</html>
